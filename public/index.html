@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Balance Service</h1>
+
+    <div class="section">
+        <h3>Get Balance</h3>
+        <form id="get-balance-form">
+            <input type="number" id="get_user_id" placeholder="User ID" required>
+            <button type="button" onclick="getBalance()">Get Balance</button>
+        </form>
+        <div id="get-balance-result"></div>
+    </div>
+
+    <div class="section">
+        <h3>Add Funds</h3>
+        <form id="add-funds-form">
+            <input type="number" id="add_user_id" placeholder="User ID" required>
+            <input type="number" id="add_amount" placeholder="Amount (€)" required>
+            <button type="button" onclick="addFunds()">Add Funds</button>
+        </form>
+        <div id="add-funds-result"></div>
+    </div>
+
+    <div class="section">
+        <h3>Subtract Funds</h3>
+        <form id="subtract-funds-form">
+            <input type="number" id="subtract_user_id" placeholder="User ID" required>
+            <input type="number" id="subtract_amount" placeholder="Amount (€)" required>
+            <button type="button" onclick="subtractFunds()">Subtract Funds</button>
+        </form>
+        <div id="subtract-funds-result"></div>
+    </div>
+
+    <div class="section">
+        <h3>Transfer Funds</h3>
+        <form id="transfer-funds-form">
+            <input type="number" id="from_user_id" placeholder="From User ID" required>
+            <input type="number" id="to_user_id" placeholder="To User ID" required>
+            <input type="number" id="transfer_amount" placeholder="Amount (€)" required>
+            <button type="button" onclick="transferFunds()">Transfer Funds</button>
+        </form>
+        <div id="transfer-funds-result"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
